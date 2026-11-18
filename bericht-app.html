@@ -188,9 +188,11 @@
 
     /* --- Adresse des Backends: lokal zum Testen, später die Cloud-Run-Adresse --- */
 
+
     const API_URL = location.hostname === "localhost"
         ? "http://localhost:8000"
         : "https://trainerbericht-api-385161830028.europe-west3.run.app";
+
     const LOGIN_SEITE = "bericht-login.html";
     const MAX_BYTES = 25 * 1024 * 1024;
     const DOCX_TYP = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
